@@ -7,8 +7,10 @@
       "layout": "raw"
     }
   },
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "garden": {
+    "type": "page",
+    "title": "Digital Garden"
+  },
   "about": {
     "title": "About",
     "type": "page"
