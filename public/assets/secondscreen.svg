@@ -1,0 +1,14 @@
+<svg width="688" height="447" viewBox="0 0 688 447" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M89 126V267H320V126H89ZM87 116C82.5817 116 79 119.582 79 124V269C79 273.418 82.5817 277 87 277H322C326.418 277 330 273.418 330 269V124C330 119.582 326.418 116 322 116H87Z" fill="currentColor"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M476 140V252H539V140H476ZM474 130C469.582 130 466 133.582 466 138V254C466 258.418 469.582 262 474 262H541C545.418 262 549 258.418 549 254V138C549 133.582 545.418 130 541 130H474Z" fill="currentColor"/>
+    <line x1="155" y1="325" x2="253" y2="325" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="173.368" y1="180.929" x2="201.296" y2="153" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="492" y1="173.929" x2="506.929" y2="159" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="490" y1="203.929" x2="522.929" y2="171" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="507" y1="213.929" x2="519.929" y2="201" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="219" y1="239.929" x2="243.929" y2="215" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="175" y1="231.929" x2="243.929" y2="163" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="181" y1="321" x2="181" y2="275" stroke="currentColor" stroke-width="10" stroke-linecap="square"/>
+    <line x1="227" y1="321" x2="227" y2="275" stroke="currentColor" stroke-width="10" stroke-linecap="square"/>
+    <circle cx="508.5" cy="240.5" r="5.5" fill="currentColor"/>
+</svg>
