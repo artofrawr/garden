@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "pages": [
+    "index",
+    "---Software Engineering---",
+    "engineering/ai",
+    "engineering/patterns",
+    "engineering/system-design",
+    "engineering/toolset",
+    "---Personal Finance---",
+    "finance/account-types",
+    "---Misc---",
+    "misc/chess",
+    "misc/fitness"
+  ]
+}

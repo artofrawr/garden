@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-container {
+  max-width: 90rem;
+  padding-left: max(env(safe-area-inset-left), 1.5rem);
+  padding-right: max(env(safe-area-inset-right), 1.5rem);
+  margin: 0 auto;
+}
+
+.client-logos {
+  border-top: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+}
+
+.client-logos div {
+  /* aspect-ratio: 16 / 9; */
+  position: relative;
+  display: block;
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 60%;
+}
+
+.client-logos div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+article div.mt-auto {
+  margin: 0;
+}
+
+article {
+  padding-bottom: 20px;
+}
+
+.link-hover,
+.links-hover a {
+  @apply relative transition-all hover:text-white;
+}
+
+.link-hover:before,
+.links-hover a:before {
+  content: "";
+  @apply absolute left-0 bottom-0 w-full h-0.5 transition-all bg-blue-400 -z-10 hover:h-full;
+}
+
+.card {
+  @apply relative inline-block transition-all min-w-full lg:min-w-[50%] text-stone-700 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-700;
+}
+
+.card h2 {
+  @apply text-xl font-medium;
+}
+
+.card p {
+  @apply text-base font-normal;
+}
+
+.card:before {
+  content: "";
+  @apply absolute -left-2 -right-2 -top-2 -bottom-2 transition-all -z-10 scale-90 hover:bg-stone-200 hover:scale-100;
+}

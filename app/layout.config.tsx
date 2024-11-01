@@ -1,5 +1,5 @@
 import { type HomeLayoutProps } from 'fumadocs-ui/home-layout';
-import { BookIcon } from 'lucide-react';
+import { BookTextIcon, LayoutGridIcon, SquareUserRoundIcon } from 'lucide-react';
 
 /**
  * Shared layout configurations
@@ -30,9 +30,21 @@ export const baseOptions: HomeLayoutProps = {
   },
   links: [
     {
-      icon: <BookIcon />,
+      icon: <BookTextIcon />,
       text: 'Digital Garden',
       url: '/garden',
+      active: 'nested-url',
+    },
+    {
+      icon: <LayoutGridIcon />,
+      text: 'Showcase',
+      url: '/showcase',
+      active: 'nested-url',
+    },
+    {
+      icon: <SquareUserRoundIcon />,
+      text: 'About',
+      url: '/about',
       active: 'nested-url',
     },
   ],
