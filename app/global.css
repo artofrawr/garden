@@ -41,13 +41,13 @@ article {
 
 .link-hover,
 .links-hover a {
-  @apply relative transition-all hover:text-white;
+  @apply relative transition-all text-stone-700 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-700;
 }
 
 .link-hover:before,
 .links-hover a:before {
   content: "";
-  @apply absolute left-0 bottom-0 w-full h-0.5 transition-all bg-blue-400 -z-10 hover:h-full;
+  @apply absolute -left-1 -right-1 -top-1 -bottom-1 transition-all -z-10 scale-90 hover:bg-stone-200 hover:scale-100;
 }
 
 .card {
@@ -65,4 +65,15 @@ article {
 .card:before {
   content: "";
   @apply absolute -left-2 -right-2 -top-2 -bottom-2 transition-all -z-10 scale-90 hover:bg-stone-200 hover:scale-100;
+}
+
+.resume {
+}
+
+.resume h4 {
+  @apply font-bold;
+}
+
+.resume p {
+  @apply pb-4;
 }

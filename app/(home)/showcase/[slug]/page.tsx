@@ -34,6 +34,12 @@ export default async function Page(props: {
           <div className="sticky top-[100px]">
             <p className="mb-1 text-fd-muted-foreground">Client</p>
             <p className="font-medium">{page.data.client}</p>
+            {page.data.date && (
+              <>
+                <p className="mb-1 text-fd-muted-foreground">Year</p>
+                <p className="font-medium">{new Date(page.data.date).getUTCFullYear()}</p>
+              </>
+            )}
           </div>
         </div>
       </article>

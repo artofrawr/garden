@@ -8,9 +8,9 @@ type FeatureCardProps = {
 }
 
 const Project = ({ title, client, img, href }: FeatureCardProps) => (
-  <a className="group cursor-pointer" href={href}>
+  <a className="group cursor-pointer hover:scale-90 transition-all" href={href}>
     <div 
-      className="filter grayscale aspect-video bg-cover bg-center group-hover:scale-90 group-hover:grayscale-0 transition-all " 
+      className="aspect-video bg-cover bg-center" 
       style={{
         backgroundImage: `url(${img})`
       }}

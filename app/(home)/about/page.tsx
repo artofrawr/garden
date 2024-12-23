@@ -33,19 +33,19 @@ export default function About() {
       <div className="py-28 max-w-screen-lg mx-auto">
         <h2 className="text-2xl font-medium pb-2">EXPERIENCE</h2>
         <p className="text-xl font-regular pb-10 text-gray-500 max-w-prose">I have been lucky to work with - and learn from - many great people and companies across diverse industries.</p>
-        <div>
-          <h4><span>2020 - present </span>Co-Founder - Herd Health Inc.</h4>
+        <div className="resume">
+          <h4>Heat Waves</h4>
+          <p></p>
+          <h4>Herd Health Inc.</h4>
           <p>Design and manage an innovative, efficient, and sustainable technology infrastructure that accomplishes the company’s mission and business goals within a secure and scalable platform. Oversee the design and engineering efforts holistically.</p>
-          <h4><span>2016-2019 </span>Tech Lead - Something New</h4>
+          <h4>Something New</h4>
           <p>Responsible for shaping the technical strategy and vision for the company, supporting business development and overseeing successful engagement delivery. Developed systems and tooling for improved workflows towards best practices. The role meant being hands-on from pitch to post-launch, including tasks such as prototyping, architectural and sprint planning, code contribution/review, and documentation.</p>
-          <h4><span>2010-2016 </span>Senior Developer - B-Reel</h4>
+          <h4>B-Reel</h4>
           <p>Contractor on a senior/lead level. Directly involved with pitches, client meetings, prototyping and full-stack development of campaigns, applications, microsites, and games for international brands. </p>
-          <h4><span>2009-2010 </span>Senior Developer - Fantasy Interactive</h4>
+          <h4>Fantasy Interactive</h4>
           <p>Senior Developer on projects ranging from microsites to video portals. Involved in all aspects of the projects, from concepting, pitches, project planning, day to day client meetings, internal reviews and production efforts.</p>
-          <h4><span>2008-2009 </span>Developer - Firstborn</h4>
+          <h4>Firstborn</h4>
           <p>Worked on award winning marketing experiences for large brands, mostly as the only developer on the project, or as lead on a small team. Helped see projects through all phases; including pitch work, design, development, and client delivery.</p>
-          <h4><span>2007 </span>Developer - Design &amp; Systems</h4>
-          <p>Interdisciplinary research and development in the field of digital media, with a particular focus on experimental, digital user interfaces.</p>
           <p><a href="/resume.pdf">Download Resume</a></p>
         </div>
       </div>

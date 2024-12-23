@@ -1,3 +1,9 @@
 {
-  "title": "System Design"
+  "title": "System Design",
+  "pages": [
+    "basics",
+    "patterns",
+    "microservices",
+    "examples"
+  ]
 }

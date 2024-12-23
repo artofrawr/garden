@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="pt-8">
           <a href="/showcase" className="card">
             <h2>Showcase</h2>
-            <p>Case studies and demos of products that I have built.</p>
+            <p>Case studies and demos of products I have built.</p>
           </a>
         </div>
 
