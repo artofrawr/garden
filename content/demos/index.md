@@ -5,13 +5,13 @@ sidebar: false
 demos:
 
   - title: Second Screen
-    subtitle: Demo
+    subtitle: Next.js + Socket.io
     link: /demos/second-screen/
 
-  - title: Drag'n Drop Timeline
-    subtitle: Demo
-    link: /guide/getting-asdf
+  - title: Karaoke
+    subtitle: Web Audio API
+    link: /demos/karaoke
 
-  - title: Drag'n Drop Timeline 2
-    subtitle: Demo
-    link: /guide/getting-asdfasdf
+  - title: Drag'n Drop Timeline
+    subtitle: PixiJS React
+    link: /demos/pixi-timeline

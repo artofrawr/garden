@@ -1,11 +1,12 @@
 import { defineConfig } from 'vitepress'
-import { buildSidebar } from '../utils/sidebar'
+import { buildSidebar } from '../ui/utils/sidebar'
 
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
   // VitePress's options here...
   srcDir: './content',
+  vite: { publicDir: '../ui/static' },
   lastUpdated: true,
   cleanUrls: true,
 

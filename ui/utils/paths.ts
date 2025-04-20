@@ -9,7 +9,7 @@ import { SidebarUtilConfig } from '../types/sidebar'
  * @returns {string} - the full path represenation of the link inside the vitepress source directory
  */
 export function linkToPath(link: string, config: SidebarUtilConfig): string {
-  const p = path.join(__dirname, '..', config.documentRootPath, link)
+  const p = path.join(__dirname, '../../', config.documentRootPath, link)
   return p.replace(/\/+$/, '') // remove trailing slash
 }
 

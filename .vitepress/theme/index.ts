@@ -3,8 +3,8 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-import DemoList from '../../components/demo/DemoList.vue'
-import HomePage from '../../components/home/HomePage.vue'
+import DemoList from '../../ui/components/demo/DemoList.vue'
+import HomePage from '../../ui/components/home/HomePage.vue'
 
 export default {
   extends: DefaultTheme,
