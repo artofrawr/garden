@@ -1,6 +1,8 @@
 # LeetCode Basics
 
-## O Notation
+## Big O Notation
+Big O Notation is used to describe the performance or complexity of an algorithm. It provides an upper bound on the time or space required by an algorithm as a function of the input size. It helps in comparing the efficiency of different algorithms by focusing on their worst-case scenarios. Common Big O Notations include O(1) for constant time, O(n) for linear time, O(log n) for logarithmic time, and O(n^2) for quadratic time, among others. Understanding Big O Notation is crucial for analyzing and optimizing algorithms.
+
 
 ## Arrays
 
