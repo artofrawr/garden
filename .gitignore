@@ -8,3 +8,4 @@ dist
 cache
 temp
 node_modules
+.vscode
