@@ -32,7 +32,13 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/knowledge/': buildSidebar('knowledge')
+      '/knowledge/': buildSidebar('knowledge', {
+        manualSortLinks: [
+          '/knowledge/engineering',
+          '/knowledge/business',
+          '/knowledge/misc'
+        ]
+      })
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/artofrawr' }]
   }

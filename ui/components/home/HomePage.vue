@@ -12,25 +12,11 @@ const { frontmatter: fm } = useData()
       </p>
     </div>
 
-    <div>
-      <div class="pt-14">
-        <a href="/knowledge">
-          <h2>Knowledge</h2>
-          <p>A digital garden for learning in public.</p>
-        </a>
-      </div>
-
-      <div class="pt-8">
-        <a href="/demos">
-          <h2>Demos</h2>
-          <p>Proof of concepts and prototypes.</p>
-        </a>
-      </div>
-
-      <div class="pt-8">
-        <a href="/about">
-          <h2>About</h2>
-          <p>Resume, client list and contact info.</p>
+    <div class="pt-8">
+      <div v-for="link in fm.links" :key="link.href" class="pt-8">
+        <a :href="link.href">
+          <h2>{{ link.title }}</h2>
+          <p>{{ link.subtitle }}</p>
         </a>
       </div>
     </div>

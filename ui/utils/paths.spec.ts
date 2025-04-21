@@ -2,7 +2,7 @@ import { join } from 'node:path'
 import { defaultConfig } from './sidebar'
 import { linkToPath, pathToLink } from './paths'
 
-const MOCK_CONTENT = '/utils/__mocks__/docs'
+const MOCK_CONTENT = '/ui/utils/__mocks__/content'
 
 describe('paths', () => {
   describe('linkToPath', () => {
@@ -17,9 +17,9 @@ describe('paths', () => {
       })
 
       // expected values
-      const defaultExpected = join(__dirname, '../content/garden')
-      const custom1Expected = join(__dirname, '../', MOCK_CONTENT)
-      const custom2Expected = join(__dirname, '../', MOCK_CONTENT, 'content')
+      const defaultExpected = join(__dirname, '../../content/garden')
+      const custom1Expected = join(__dirname, '../../', MOCK_CONTENT)
+      const custom2Expected = join(__dirname, '../../', MOCK_CONTENT, 'content')
 
       expect(defaultPath).toBe(defaultExpected)
       expect(custom1Path).toBe(custom1Expected)
