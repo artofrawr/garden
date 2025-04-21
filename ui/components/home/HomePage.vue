@@ -14,9 +14,9 @@ const { frontmatter: fm } = useData()
 
     <div>
       <div class="pt-14">
-        <a href="/garden">
-          <h2>Digital Garden</h2>
-          <p>Public knowledge repository.</p>
+        <a href="/knowledge">
+          <h2>Knowledge</h2>
+          <p>A digital garden for learning in public.</p>
         </a>
       </div>
 

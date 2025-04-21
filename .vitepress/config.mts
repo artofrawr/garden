@@ -22,7 +22,7 @@ export default defineConfig({
     logo: { src: '/logo.svg', width: 24, height: 24 },
 
     nav: [
-      { text: 'Digital Garden', link: '/garden/', activeMatch: '/garden/' },
+      { text: 'Knowledge', link: '/knowledge/', activeMatch: '/knowledge/' },
       { text: 'Demos', link: '/demos/', activeMatch: '/demos/' },
       { text: 'About', link: '/about/' }
     ],
@@ -32,7 +32,7 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/garden/': buildSidebar('garden')
+      '/knowledge/': buildSidebar('knowledge')
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/artofrawr' }]
   }
