@@ -1,12 +1,12 @@
 import { defineConfig } from 'vitepress'
-import { sidebarPlugin } from '../ui/utils/sidebar'
+import { buildSidebar } from '../ui/utils/sidebar'
 
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
   // VitePress's options here...
   srcDir: './content',
-  vite: { publicDir: '../ui/static', plugins: [sidebarPlugin()] },
+  vite: { publicDir: '../ui/static' },
   lastUpdated: true,
   cleanUrls: true,
 
@@ -26,6 +26,16 @@ export default defineConfig({
       { text: 'Demos', link: '/demos/', activeMatch: '/demos/' },
       { text: 'About', link: '/about/' }
     ],
+
+    sidebar: {
+      '/knowledge/': buildSidebar('knowledge', {
+        manualSortLinks: [
+          '/knowledge/engineering',
+          '/knowledge/business',
+          '/knowledge/misc'
+        ]
+      })
+    },
 
     search: {
       provider: 'local'

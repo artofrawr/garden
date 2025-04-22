@@ -32,18 +32,18 @@ export function sidebarPlugin(): Plugin {
       console.log(config)
       // create sidebar data and insert
       // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion, @typescript-eslint/prefer-destructuring
-      // const { themeConfig } = (config as { vitepress: SiteConfig }).vitepress
-      //   .site
-      // themeConfig.sidebar = {
-      //   '/knowledge/': buildSidebar('knowledge', {
-      //     manualSortLinks: [
-      //       '/knowledge/engineering',
-      //       '/knowledge/business',
-      //       '/knowledge/misc'
-      //     ]
-      //   })
-      // }
-      // console.log('injected sidebar data successfully')
+      const { themeConfig } = (config as { vitepress: SiteConfig }).vitepress
+        .site
+      themeConfig.sidebar = {
+        '/knowledge/': buildSidebar('knowledge', {
+          manualSortLinks: [
+            '/knowledge/engineering',
+            '/knowledge/business',
+            '/knowledge/misc'
+          ]
+        })
+      }
+      console.log('injected sidebar data successfully')
       return config
     }
   }
