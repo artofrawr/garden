@@ -1,12 +1,52 @@
 import fs from 'node:fs'
-import { DefaultTheme } from 'vitepress'
+import { DefaultTheme, SiteConfig } from 'vitepress'
 import { SidebarUtilConfig } from '../types/sidebar'
 import { linkToPath, pathToLink } from './paths'
 import { resolve } from 'node:path'
 import { getOrderFromFrontmatter } from './frontmatter'
+import type { Plugin, ViteDevServer } from 'vite'
 
 export const defaultConfig: SidebarUtilConfig = {
   documentRootPath: '/content'
+}
+
+export function sidebarPlugin(): Plugin {
+  return {
+    name: 'vite-plugin-vitepress-sidebar',
+    configureServer({ watcher, restart }: ViteDevServer) {
+      const fsWatcher = watcher.add('*.md')
+      fsWatcher.on('all', async (event, path) => {
+        if (event !== 'change') {
+          console.log(`${event} ${path}`)
+          try {
+            await restart()
+            console.log('update sidebar...')
+          } catch {
+            console.log(`${event} ${path}`)
+            console.log('update sidebar failed')
+          }
+        }
+      })
+    },
+    config(config) {
+      console.log(config)
+      // create sidebar data and insert
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion, @typescript-eslint/prefer-destructuring
+      // const { themeConfig } = (config as { vitepress: SiteConfig }).vitepress
+      //   .site
+      // themeConfig.sidebar = {
+      //   '/knowledge/': buildSidebar('knowledge', {
+      //     manualSortLinks: [
+      //       '/knowledge/engineering',
+      //       '/knowledge/business',
+      //       '/knowledge/misc'
+      //     ]
+      //   })
+      // }
+      // console.log('injected sidebar data successfully')
+      return config
+    }
+  }
 }
 
 /**

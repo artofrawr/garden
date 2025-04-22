@@ -1,3 +1,6 @@
+---
+order: 1
+--- 
 # LeetCode Basics
 
 ## Big O Notation
