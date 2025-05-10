@@ -1,7 +1,7 @@
 ---
-order: 2
+order: 3
 --- 
-# Coding Patterns
+# Algorithmic Patterns
 
 This list of coding patterns provides a structured approach to solving a wide range of algorithmic problems.
 

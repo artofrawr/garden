@@ -1,11 +1,7 @@
 ---
-order: 1
+order: 2
 --- 
-# LeetCode Basics
-
-## Big O Notation
-Big O Notation is used to describe the performance or complexity of an algorithm. It provides an upper bound on the time or space required by an algorithm as a function of the input size. It helps in comparing the efficiency of different algorithms by focusing on their worst-case scenarios. Common Big O Notations include O(1) for constant time, O(n) for linear time, O(log n) for logarithmic time, and O(n^2) for quadratic time, among others. Understanding Big O Notation is crucial for analyzing and optimizing algorithms.
-
+# Data Structures
 
 ## Arrays
 
@@ -16,9 +12,11 @@ Big O Notation is used to describe the performance or complexity of an algorithm
 const truthy = [0, 1, 2, 3, null].filter(Boolean)
 
 // get only unique values
-const unique = [0, 1, 2, 3, 0, 1].filter(
+const arr = [0, 1, 2, 3, 0, 1]
+const uniqueSet = [...new Set(arr)]; // faster
+const uniqueFilter = arr.filter(
   (value, index, array) => array.indexOf(value) === index
-)
+) // slower but more versatile
 ```
 
 ### Array Sorting
