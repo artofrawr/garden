@@ -3,7 +3,7 @@ order: 3
 --- 
 # Algorithmic Patterns
 
-This list of coding patterns provides a structured approach to solving a wide range of algorithmic problems.
+A list of algorithmic patterns that can be used to solve most LeetCode questions... and might even be useful in the real world.
 
 ## Cyclic Sort
 
@@ -12,19 +12,13 @@ This pattern describes an interesting approach to deal with problems involving a
 Following are some ways you can identify that the given problem might require a cyclic sort:
 
 - They will be problems involving a sorted array with numbers in a given range
-- If the problem asks you to find the missing/duplicate/smallest number in an sorted/rotated array
+- If you are trying to find the missing/duplicate/smallest number in an sorted/rotated array
 
-### Examples
+__Examples__:
+- [Missing Number](./examples/missing-number.md)
+- [Smallest Missing Positive Number](./examples/missing-positive-number.md)
 
-Problems featuring cyclic sort pattern:
 
-#### Find the Missing Number (easy)
-
-https://leetcode.com/problems/missing-number/description/
-
-#### Find the Smallest Missing Positive Number (medium)
-
-https://leetcode.com/problems/first-missing-positive/description/
 
 ## Fast and Slow Pointers
 
@@ -32,30 +26,17 @@ The Fast and Slow pointer approach, also known as the Hare & Tortoise algorithm,
 
 By moving at different speeds (say, in a cyclic linked list), the algorithm proves that the two pointers are bound to meet. The fast pointer should catch the slow pointer once both the pointers are in a cyclic loop.
 
-### How do you identify when to use the Fast and Slow pattern?
-
-The problem will deal with a loop in a linked list or array
-When you need to know the position of a certain element or the overall length of the linked list.
-
-### When should I use it over the Two Pointer method mentioned above?
+Some scenarios that might require a fast and slow pointer pattern:
+- The problem will deal with a loop in a linked list or array
+- When you need to know the position of a certain element or the overall length of the linked list.
 
 There are some cases where you shouldn't use the Two Pointer approach such as in a singly linked list where you can't move in a backwards direction. An example of when to use the Fast and Slow pattern is when you're trying to determine if a linked list is a palindrome.
 
-### Examples
+__Examples__:
+- [Linked List Cycle](./examples/linked-list-cycle.md)
+- [Palindrome Linked List](./examples/palindrome-linked-list.md)
+- [Cycle In Circular Array](./examples/cycle-in-circular-array.md)
 
-Problems featuring the fast and slow pointers pattern:
-
-#### Linked List Cycle (easy)
-
-https://leetcode.com/problems/linked-list-cycle/description/
-
-#### Palindrome Linked List (medium)
-
-https://leetcode.com/problems/palindrome-linked-list/description/
-
-#### Cycle in a Circular Array (hard)
-
-https://leetcode.com/problems/circular-array-loop/description/
 
 ## K-way Merge
 

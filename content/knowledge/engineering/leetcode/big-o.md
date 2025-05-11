@@ -4,7 +4,7 @@ order: 1
 
 # Big O
 
-Big O Notation is a way to describe the performance of an algorithm. It is used to describe the worst-case scenario to compare the performance of different algorithms. Algorithms are classified according to how their run time or space requirements grow as the input size grows. The letter O is used because the growth rate of a function is also called its order.
+Big O Notation is a way to describe the performance of an algorithm. It expresses how the algorithm's runtime or space requirements grow as the algorithm's input size grows. 
 
 ## Common Big O Notations:
  - __O(1)__ Constant Time - The algorithm's runtime is the same, regardless of the input size. 
@@ -17,7 +17,7 @@ Big O Notation is a way to describe the performance of an algorithm. It is used 
 Time complexity is a measure of the amount of time an algorithm takes to complete in relation to the length of the input.
 
 ### Examples:
-Accessing an array index has O(1) time complexity.
+Accessing an array index has O(1) time complexity, regardless of the size of the array.
 ```js
 const value = array[5]
 ```
